@@ -2,5 +2,6 @@
 # Odoo-Tutorial 서버 실행: ./run.sh [추가 odoo-bin 옵션]
 set -e
 cd "$(dirname "$0")"
+[ -f odoo.conf ] || cp odoo.conf.example odoo.conf
 source ~/venv-odoo-19.0/bin/activate
 exec python3 ../odoo/odoo-bin -c odoo.conf "$@"

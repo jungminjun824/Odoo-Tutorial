@@ -1,0 +1,6 @@
+[options]
+addons_path = ../odoo/addons,./addons
+db_name = odoo-test
+dbfilter = ^odoo-test$
+http_port = 8079
+
